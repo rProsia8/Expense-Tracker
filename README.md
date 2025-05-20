@@ -50,32 +50,6 @@ A full-stack expense tracking application with a modern React frontend and FastA
 - **JWT** - JSON Web Tokens for secure authentication
 - **Uvicorn** - ASGI server implementation for Python
 
-## Development Challenges & Solutions
-
-### 1. State Management
-**Problem**: Managing expense data and user settings across components.
-**Solution**: Created a custom context provider (`ExpenseProvider`) to centralize state management and provide access to expense data throughout the application.
-
-### 2. Data Visualization
-**Problem**: Representing complex expense data in an intuitive way.
-**Solution**: Implemented multiple chart types using Recharts library, each optimized for different aspects of expense analysis (time trends, category breakdown, etc.).
-
-### 3. Form Validation
-**Problem**: Ensuring user inputs are valid before submission.
-**Solution**: Integrated React Hook Form with Zod schemas for robust type-safe validation with minimal boilerplate.
-
-### 4. Authentication Flow
-**Problem**: Securing routes and maintaining user sessions.
-**Solution**: Implemented JWT authentication with token refresh mechanisms and protected routes using Next.js middleware.
-
-### 5. Responsive Design
-**Problem**: Creating a consistent experience across device sizes.
-**Solution**: Used Tailwind CSS with custom breakpoints and responsive components that adapt to different screen sizes.
-
-### 6. Data Filtering
-**Problem**: Allowing users to filter and sort expenses based on various criteria.
-**Solution**: Implemented client-side filtering with optimized sorting algorithms and pagination for better performance with large datasets.
-
 ## How It Works: Application Process Flow
 
 ### Authentication Flow
@@ -151,12 +125,6 @@ A full-stack expense tracking application with a modern React frontend and FastA
    uvicorn main:app --reload
 
 The backend API will be available at http://localhost:8000. The application uses SQLite with SQLAlchemy ORM. The database file will be created automatically when you first run the application.
-
-## API Documentation
-
-Once the backend is running, you can access the auto-generated API documentation at:
-- http://localhost:8000/docs (Swagger UI)
-- http://localhost:8000/redoc (ReDoc)
 
 ## Usage Guide
 
