@@ -1,6 +1,6 @@
 # Expense Tracker Application
 
-A full-stack expense tracking application with a modern React frontend and FastAPI backend. This application helps users track, categorize, and visualize their personal expenses.
+This application helps users track, categorize, and visualize their personal expenses.
 
 ## Features
 
@@ -78,26 +78,11 @@ A full-stack expense tracking application with a modern React frontend and FastA
    - Optimistic UI updates show changes immediately
    - Confirmation is required for deletions to prevent accidental data loss
 
-### Data Visualization Pipeline
-1. Raw expense data is retrieved from the API
-2. Data is processed and transformed for specific chart requirements
-3. Date-based data is aggregated by day, week, or month as needed
-4. Category-based data is grouped and calculated for percentage distribution
-5. Charts render the processed data with interactive elements
-
 ### Budget Tracking Mechanism
 1. User sets monthly budget in settings
 2. Application calculates spending against budget in real-time
 3. Visual indicators show budget utilization percentage
 4. Warnings appear when spending approaches or exceeds budget limits
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v16+)
-- Python (v3.8+)
-- npm or pnpm
-
 
 2. Install frontend dependencies
    npm install
@@ -109,7 +94,6 @@ A full-stack expense tracking application with a modern React frontend and FastA
 ### Backend Setup
 1. Navigate to the backend directory
    cd backend
-
 
 2. Create a virtual environment (optional but recommended)
    ```
@@ -129,14 +113,13 @@ The backend API will be available at http://localhost:8000. The application uses
 ## Usage Guide
 
 ### Adding Expenses
-1. Log in to your account
-2. Navigate to the "Add Expense" page
-3. Fill in the expense details:
+1. Navigate to the "Add Expense" page
+2. Fill in the expense details:
    - Amount
    - Category
    - Description
    - Date
-4. Click "Save" to record the expense
+3. Click "Save" to record the expense
 
 ### Viewing Statistics
 The dashboard provides various visualizations:
@@ -159,10 +142,3 @@ You can change your preferred currency in the settings page.
 
 ### Monthly Budget
 Adjust your monthly budget in the settings to better track your spending goals.
-
-## Troubleshooting
-
-### Common Issues
-- **Backend connection errors**: Ensure the FastAPI server is running at http://localhost:8000
-- **Authentication issues**: Check if your token has expired; try logging in again
-- **Database errors**: If the database becomes corrupted, delete the `expense_tracker.db` file and restart the server
